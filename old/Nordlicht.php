@@ -14,7 +14,7 @@ if( !defined( 'MEDIAWIKI' ) )
  * @todo document
  * @addtogroup Skins
  */
-class SkinNordlicht extends SkinTemplate {
+class SkinNordlichtOld extends SkinTemplate {
 	/** Using monobook. */
 	function initPage( &$out ) {
 		SkinTemplate::initPage( $out );
@@ -28,7 +28,7 @@ class SkinNordlicht extends SkinTemplate {
  * @todo document
  * @addtogroup Skins
  */
-class NordlichtTemplate extends QuickTemplate {
+class NordlichtTemplateOld extends QuickTemplate {
 	/**
 	 * Template filter callback for MonoBook skin.
 	 * Takes an associative array of data set from a SkinTemplate-based

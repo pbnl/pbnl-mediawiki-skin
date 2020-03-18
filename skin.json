@@ -1,0 +1,42 @@
+{
+	"name": "Nordlicht",
+	"version": "1.0",
+	"author": "Paul Kruse",
+	"url": "https://www.mediawiki.org/wiki/Skin:Example",
+	"descriptionmsg": "nordlicht-desc",
+	"namemsg": "nordlicht",
+	"license-name": "CC0-1.0",
+	"type": "skin",
+	"requires": {
+		"MediaWiki": ">= 1.29.0"
+	},
+	"ValidSkinNames": {
+		"nordlicht": "Nordlicht"
+	},
+	"ResourceModules": {
+		"skins.nordlicht": {
+			"class": "ResourceLoaderSkinModule",
+			"styles": {
+				"resources/libraries/bootstrap-grid.css": {
+					"media": "screen"
+				},
+				"resources/main.less": {
+					"media": "screen"
+				}
+			}
+		},
+		"skins.nordlicht.js": {
+			"scripts": [
+				"resources/main.js"
+			]
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "",
+		"remoteSkinPath": "Nordlicht"
+	},
+	"AutoloadClasses": {
+		"SkinNordlicht": "includes/SkinNordlicht.php",
+		"NordlichtTemplate": "includes/NordlichtTemplate.php"
+	}
+}
